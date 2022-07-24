@@ -10,8 +10,11 @@
 
 ### Note
 For both `lab` and `exercise` folders:
+
     - .Rmd is the raw R markdown 
+    
     - .md is the rendered markdown after Knitting the .Rmd to github document
+    
     - the subfolders contains the saved figures during the knitting processes, they will be used by the .md for the rendering purpose
 
 1. `lab` 
