@@ -3,11 +3,9 @@ islr2\_ch2\_exercise
 Wenwen Kong
 7/23/2022
 
-# Solutions to Applied exercises \#8-\#10 in ISLR2 chapter 2
+## Solutions to ISLR2 chapter 2
 
------
-
-## 8\.
+### Problem 8.
 
 This exercise relates to the `College` data set, which can be found in
 the file `College.csv` on the book website. It contains a number of
@@ -43,76 +41,81 @@ editor.
 2)  Look at the data using the `View()` function. You should notice that
     the first column is just the name of each university. We don’t
     really want `R` to treat this as data. However, it may be handy to
-    have these names for later. Try the following commands:
+    have these names for later. Try the following commands: \>
+    rownames(college) \<- college\[,1\] \>
+    View(college)
 
-> rownames(college) \<- college\[,1\] View(college)
+<!-- end list -->
 
-You should see that there is now a `row.names` column with the name of
-each university recorded. This means that `R` has given each row a name
-corresponding to the appropriate university. `R` will not try to perform
-calculations on the row names. However, we still need to eliminate the
-first column in the data where the names are stored. Try
-
-> college \<- college\[,-1\] View(college)
-
-Now you see that the first data collumn is `Private`. Note that another
-column labeled `row.names` now appears before the `Private` column.
-However, this is not a data column but rather the name that `R` is
-giving to each row.
+    You should see that there is now a `row.names` column with the name of each university recorded. This means that `R` has given each row a name corresponding to the appropriate university. `R` will not try to perform calculations on the row names. However, we still need to eliminate the first column in the data where the names are stored. Try
+    > college <- college[,-1]
+    > View(college)
+    
+    Now you see that the first data collumn is `Private`. Note that another column labeled `row.names` now appears before the `Private` column. However, this is not a data column but rather the name that `R` is giving to each row. 
 
 3)  
 <!-- end list -->
 
-1.  Use the `summary()` function to produce a numerical summary of the
-    variables in the data set.
-2.  Use the `pairs()` function to produce a scatterplot matrix of the
-    first ten columns or variables of the data. Recall that you can
-    reference the first ten columns of a matrix `A` using `A[, 1:10]`.
-3.  Use the `plot()` function to produce side-by-side boxplots of
-    `Outstate` versus `Private`.
-4.  Create a new qualitative variable, called `Elite`, by *binning* the
-    `Top10perc` variable. We are going to divide universities into two
-    groups based on whether or not the proportion of students coming
-    from the top 10% of their high school classes exceeds 50%. \> Elite
-    \<- rep(“No”, nrow(college)) \> Elite\[college$Top10perc \> 50\] \<-
-    “Yes” \> Elite \<- as.factor(Elite) \> college \<-
-    data.frame(college, Elite)
+    i. Use the `summary()` function to produce a numerical summary of the variables in the data set. 
+    
+    ii. Use the `pairs()` function to produce a scatterplot matrix of the first ten columns or variables of the data. Recall that you can reference the first ten columns of a matrix `A` using `A[, 1:10]`.
+    
+    iii. Use the `plot()` function to produce side-by-side boxplots of `Outstate` versus `Private`.
+    
+    iv. Create a new qualitative variable, called `Elite`, by *binning* the `Top10perc` variable. We are going to divide universities into two groups based on whether or not the proportion of students coming from the top 10% of their high school classes exceeds 50%.
+        > Elite <- rep("No", nrow(college))
+        > Elite[college$Top10perc > 50] <- "Yes"
+        > Elite <- as.factor(Elite)
+        > college <- data.frame(college, Elite)
+    
+    Use the `summary()` function to see how many elite universities there are. Now use the `plot()` function to produce side-by-side boxplots of `Outstate` versus `Elite`. 
+    
+    v. Use the `hist()` function to produce some histograms with differing numbers of bins for a few of the quantitative variables. You may find the command `par(mfrow = c(2,2))` useful: it will divide the print window into four regions so that four plots can be made simultaneously. Modifying the arguments to this function will divide the screen in other ways. 
+    
+    vi. Continue exploring the data, and provide a brief summary of what you discover. 
 
-Use the `summary()` function to see how many elite universities there
-are. Now use the `plot()` function to produce side-by-side boxplots of
-`Outstate` versus `Elite`.
+### Problem 9.
 
-22. Use the `hist()` function to produce some histograms with differing
-    numbers of bins for a few of the quantitative variables. You may
-    find the command `par(mfrow = c(2,2))` useful: it will divide the
-    print window into four regions so that four plots can be made
-    simultaneously. Modifying the arguments to this function will divide
-    the screen in other ways.
+This exercise involves the `Auto` data set studied in the lab. Make sure
+that the missing values have been removed from the data.
 
-<!-- end list -->
+1)  Which of the predictors are quantitative, and which are qualitative?
 
-6.  Continue exploring the data, and provide a brief summary of what you
-    discover.
+2)  What is the *range* of each quantitative predictor? You can answer
+    this using the `range()` function.
 
-## 10\.
+3)  What is the mean and standard deviation of each quantitative
+    predictor?
+
+4)  Now remove the 10th through 85th observations. What is the range,
+    mean, and standard deviation of each predictor in the subset of the
+    data that remains?
+
+5)  Using the full data set, investigate the predictors graphically,
+    using scatterplots or other tools of your choice. Create some plots
+    highlighting the relationships among the predictors. Comment on your
+    findings.
+
+6)  Suppose that we wish to predict gas mileage (`mpg`) on the basis of
+    the other variables. Do your plots suggest that any of the other
+    variables might be useful in predicting `mpg`? Justify your answer.
+
+### Problem 10.
 
 This exercise involves the `Boston` housing data set.
 
 1)  To begin, load in the `Boston` data set. The `Boston` data set is
-    part of the `ISLR2` *library*.
+    part of the `ISLR2` *library*. \> library(ISLR2)
 
-> library(ISLR2)
+<!-- end list -->
 
-Now the data set is contained in the object `Boston`.
-
-> Boston
-
-Read about the data set:
-
-> ?Boston
-
-How many rows are in this data set? How many columns? What do the rows
-and columns represent?
+    Now the data set is contained in the object `Boston`. 
+      > Boston
+    
+    Read about the data set:
+      > ?Boston
+    
+    How many rows are in this data set? How many columns? What do the rows and columns represent?
 
 2)  Make some pairwise scatterplots of the predictors (columns) in this
     data set. Describe your findings.
