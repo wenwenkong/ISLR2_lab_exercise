@@ -10,9 +10,15 @@
 
 1. `lab` 
 Each chapter from chapters 2 to 13 in ISLR2 comes with a R lab section. The raw lab files were provided on the ISLR2 website. I added a few comments here and there when I was following the labs. 
+  - .Rmd is the raw R markdown 
+  - .md is the rendered markdown after Knitting the .Rmd to github document
+  - the subfolders contains the saved figures during the knitting processes, they will be used by the .md for the rendering purpose
 
 2. `exercise` 
 Each chapter from chapters 2 to 13 includes an exercise section, which is grouped into two parts: conceptual exercise and applied exercise. Files in this `exercise` folder are my solutions to the applied exercise, with solutions to each chapter saved in separate files. All current solutions are provided in R. I hope to provide python solutions as well at a later point. 
+  - .Rmd is the raw R markdown 
+  - .md is the rendered markdown after Knitting the .Rmd to github document
+  - the subfolders contains the saved figures during the knitting processes, they will be used by the .md for the rendering purpose
 
 3. `data` 
 All data files needed for lab and exercise. These data files were downloaded from ISLR2. 
