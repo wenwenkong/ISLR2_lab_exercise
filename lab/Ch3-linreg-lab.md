@@ -5,10 +5,19 @@ Ch3-linreg-lab
 
 ## Notes by Wenwen
 
-### \- confidence interval and prediction interval
-
-    - The `predict()` function can be used to produce confidence intervals and prediction intervals for the prediction of `medv` (the response variable in the example) for a given value of `lstat` (the predictor variable in the example).
-    - [Here](https://towardsdatascience.com/how-confidence-and-prediction-intervals-work-4592019576d8) is a nice summary of `confidence interval` and `prediction interval`. `The range that likely contains the value of the dependent variable for a single new observation given specific values of the independent variables, is the prediction interval.`
+  - confidence interval and prediction interval
+    
+      - The `predict()` function can be used to produce confidence
+        intervals and prediction intervals for the prediction of `medv`
+        (the response variable in the example) for a given value of
+        `lstat` (the predictor variable in the
+        example).
+      - [Here](https://towardsdatascience.com/how-confidence-and-prediction-intervals-work-4592019576d8)
+        is a nice summary of `confidence interval` and `prediction
+        interval`. `The range that likely contains the value of the
+        dependent variable for a single new observation given specific
+        values of the independent variables, is the prediction
+        interval.`
 
 ### \- diagnostic plots for linear regression
 
@@ -28,11 +37,6 @@ Ch3-linreg-lab
 
     - [wikipedia](https://en.wikipedia.org/wiki/Variance_inflation_factor)
     - [investopedia](https://www.investopedia.com/terms/v/variance-inflation-factor.asp)
-
-## Questions:
-
-1.  In the multiple regression model including qualitative predictors,
-    why we don’t see the parameters for `ShelveLocBad`?
 
 -----
 
