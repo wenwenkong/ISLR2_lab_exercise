@@ -3,7 +3,7 @@ Ch3-linreg-lab
 
 # Lab: Linear Regression
 
-## Notes by Wenwen
+### Wenwen’s notes
 
   - confidence interval and prediction interval
     
@@ -19,24 +19,34 @@ Ch3-linreg-lab
         values of the independent variables, is the prediction
         interval.`
 
-### \- diagnostic plots for linear regression
-
-    - [Understanding Diagnostic Plots for Linear Regression Analysis](https://data.library.virginia.edu/diagnostic-plots/)
-
-### \- standardized residuals vs studentized residuals
-
-    - [This post](https://stats.stackexchange.com/questions/204708/is-studentized-residuals-v-s-standardized-residuals-in-lm-model) includes a nice summary 
-
-### \- leverage statistic
-
-    - We could use the `hatvalues()` function to calculate the leverage statistic, and use the `which.max()` function to identify the index of the largest element of a vector. In this case, it tells us which observation has the largest leverage statistic. `MY QUESTION: WHAT'S THE NEXT?`
+  - diagnostic plots for linear regression
     
-    - See [here](https://www.r-bloggers.com/2016/06/leverage-and-influence-in-a-nutshell/) for a summary of the `leverage` and `influence` measures.
+      - [Understanding Diagnostic Plots for Linear Regression
+        Analysis](https://data.library.virginia.edu/diagnostic-plots/)
 
-### \- variance inflation factor
+  - standardized residuals vs studentized residuals
+    
+      - [This
+        post](https://stats.stackexchange.com/questions/204708/is-studentized-residuals-v-s-standardized-residuals-in-lm-model)
+        includes a nice summary
 
-    - [wikipedia](https://en.wikipedia.org/wiki/Variance_inflation_factor)
-    - [investopedia](https://www.investopedia.com/terms/v/variance-inflation-factor.asp)
+  - leverage statistic
+    
+      - We could use the `hatvalues()` function to calculate the
+        leverage statistic, and use the `which.max()` function to
+        identify the index of the largest element of a vector. In this
+        case, it tells us which observation has the largest leverage
+        statistic. `MY QUESTION: WHAT'S THE NEXT?`
+    
+      - See
+        [here](https://www.r-bloggers.com/2016/06/leverage-and-influence-in-a-nutshell/)
+        for a summary of the `leverage` and `influence` measures.
+
+  - variance inflation
+        factor
+    
+      - [wikipedia](https://en.wikipedia.org/wiki/Variance_inflation_factor)
+      - [investopedia](https://www.investopedia.com/terms/v/variance-inflation-factor.asp)
 
 -----
 

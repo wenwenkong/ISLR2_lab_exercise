@@ -17,31 +17,30 @@ output:
     name: ir
 ---
 
-
 # Lab: Linear Regression
 
-## Notes by Wenwen  
+### Wenwen's notes  
 
 - confidence interval and prediction interval 
 
     - The `predict()` function can be used to produce confidence intervals and prediction intervals for the prediction of `medv` (the response variable in the example) for a given value of `lstat` (the predictor variable in the example).
     - [Here](https://towardsdatascience.com/how-confidence-and-prediction-intervals-work-4592019576d8) is a nice summary of `confidence interval` and `prediction interval`. `The range that likely contains the value of the dependent variable for a single new observation given specific values of the independent variables, is the prediction interval.`
     
-### - diagnostic plots for linear regression 
+- diagnostic plots for linear regression 
 
     - [Understanding Diagnostic Plots for Linear Regression Analysis](https://data.library.virginia.edu/diagnostic-plots/)
 
-### - standardized residuals vs studentized residuals 
+- standardized residuals vs studentized residuals 
 
     - [This post](https://stats.stackexchange.com/questions/204708/is-studentized-residuals-v-s-standardized-residuals-in-lm-model) includes a nice summary 
     
-### - leverage statistic 
+- leverage statistic 
 
     - We could use the `hatvalues()` function to calculate the leverage statistic, and use the `which.max()` function to identify the index of the largest element of a vector. In this case, it tells us which observation has the largest leverage statistic. `MY QUESTION: WHAT'S THE NEXT?`
     
     - See [here](https://www.r-bloggers.com/2016/06/leverage-and-influence-in-a-nutshell/) for a summary of the `leverage` and `influence` measures.
 
-### - variance inflation factor
+- variance inflation factor
 
     - [wikipedia](https://en.wikipedia.org/wiki/Variance_inflation_factor)
     - [investopedia](https://www.investopedia.com/terms/v/variance-inflation-factor.asp)
