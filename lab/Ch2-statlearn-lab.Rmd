@@ -17,10 +17,13 @@ jupyter:
     name: ir
 ---
 
-# Note: added a few comments while following through the lab
-- Set root directory for knitr
-- Still confused about the interactive plot method identify()
+### Wenwen's notes
+- Added a few comments while following through the lab
 
+    - Set root directory for knitr
+    - Still confused about the interactive plot method identify()
+
+---
 # Lab: Introduction to R
 
 In this lab, we will introduce some simple `R` commands. The best way to learn a new language

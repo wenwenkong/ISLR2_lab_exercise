@@ -16,9 +16,6 @@ output:
     language: R
     name: ir
 ---
-
-# Lab: Linear Regression
-
 ### Wenwen's notes  
 
 - confidence interval and prediction interval 
@@ -46,6 +43,8 @@ output:
     - [investopedia](https://www.investopedia.com/terms/v/variance-inflation-factor.asp)
 
 ---
+# Lab: Linear Regression
+
 ## Libraries
 
 The `library()` function is used to load *libraries*, or groups of  functions and data sets that are not included in the base `R` distribution. Basic functions that perform least squares linear regression and other simple analyses come standard with the base distribution,  but more exotic functions require additional libraries.

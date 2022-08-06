@@ -1,10 +1,14 @@
 Ch2-statlearn-lab
 ================
 
-# Note: added a few comments while following through the lab
+### Wenwen’s notes
 
-  - Set root directory for knitr
-  - Still confused about the interactive plot method identify()
+  - Added a few comments while following through the lab
+    
+      - Set root directory for knitr
+      - Still confused about the interactive plot method identify()
+
+-----
 
 # Lab: Introduction to R
 
@@ -192,7 +196,7 @@ y <- x + rnorm(50, mean = 50, sd = .1)
 cor(x, y)
 ```
 
-    ## [1] 0.9968279
+    ## [1] 0.9957295
 
 By default, `rnorm()` creates standard normal random variables with a
 mean of

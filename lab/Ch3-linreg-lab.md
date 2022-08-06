@@ -1,8 +1,6 @@
 Ch3-linreg-lab
 ================
 
-# Lab: Linear Regression
-
 ### Wenwen’s notes
 
   - confidence interval and prediction interval
@@ -49,6 +47,8 @@ Ch3-linreg-lab
       - [investopedia](https://www.investopedia.com/terms/v/variance-inflation-factor.asp)
 
 -----
+
+# Lab: Linear Regression
 
 ## Libraries
 
