@@ -1,9 +1,7 @@
-islr2\_ch2\_exercise
+solutioins to the applied exercises in islr2 ch2
 ================
 Wenwen Kong
 7/23/2022
-
-## Solutions to ISLR2 chapter 2
 
 ### Problem 8.
 

@@ -1,5 +1,5 @@
 ---
-title: "Solutioins to the applied exercises in ISLR2 ch3"
+title: "solutioins to the applied exercises in islr2 ch3"
 author: "Wenwen Kong"
 date: "8/6/2022"
 output:

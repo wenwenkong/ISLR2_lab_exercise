@@ -1,4 +1,4 @@
-Solutioins to the applied exercises in ISLR2 ch3
+solutioins to the applied exercises in islr2 ch3
 ================
 Wenwen Kong
 8/6/2022
