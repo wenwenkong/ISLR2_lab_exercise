@@ -20,6 +20,7 @@ Each chapter from chapters 2 to 13 in ISLR2 comes with a R lab section. The raw 
 
 2. `exercise` 
 Each chapter from chapters 2 to 13 includes an exercise section, which is grouped into two parts: conceptual exercise and applied exercise. Files in this `exercise` folder are my solutions to the applied exercise, with solutions to each chapter saved in separate files. All current solutions are provided in R. I hope to provide python solutions as well at a later point. 
+    - Note: current files in this fold only include descriptions of the problem sets. Solutions will be updated gradually.
 
 3. `data` 
 All data files needed for lab and exercise. These data files were downloaded from ISLR2. 
