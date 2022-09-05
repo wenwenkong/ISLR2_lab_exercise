@@ -1,0 +1,56 @@
+---
+title: "solutioins to the applied exercises in islr2 ch13"
+author: "Wenwen Kong"
+date: "9/5/2022"
+output:
+  github_document:
+    html_preview: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Problem 7 
+This problem makes use of the `Carseats` dataset in the `ISLR2` package.
+
+  (a)
+  For each quantitative variable in the dataset besides `Sales`, fit a linear model to predict `Sales` using that quantitative variable. Report the $p$-values associated with the coefficients for the variables. That is, for each model of the form $Y = \beta_{0} + \beta_{1}X + \epsilon$, report the $p$-value associated with the coefficient $\beta_{1}$. Here, $Y$ represents `Sales` and $X$ represents one of the other quantitative variables. 
+  
+  (b)
+  Suppose we control the Type $I$ error at level $\alpha = 0.05$ for the $p$-values obtained in (a). Which null hypotheses do we reject?
+  
+  (c)
+  Now suppose we control the FWER at level $0.05$ for the $p$-values. Which null hypotheses do we reject?
+  
+  (d)
+  Finally, suppose we control the FDR at level $0.2$ for the $p$-values. Which null hypotheses do we reject?
+  
+### Problem 8
+In this problem, we will simulate data from $m = 100$ fund managers. 
+
+> set.seed(1)
+> n <- 20
+> m <- 100
+> x <- matrix(rnorm(n * m), ncol = m)
+
+These data represent each fund manager's percentage returns for each of $n = 20$ months. We wish to test the null hypothesis that each fund manager's percentage returns have population mean equal to zero. Notice that we simulated the data in such a way that each fund manager's percentage returns do have population mean zero; in other words, all $m$ null hypotheses are true. 
+
+  (a)
+  Conduct a one-sample $t$-test for each fund manager, and plot a histogram of the $p$-values obtained. 
+  
+  (b)
+  If we control Type $I$ error for each null hypothesis at level $\alpha = 0.05$, then how many null hypotheses do we reject?
+  
+  (c)
+  If we control the FWER at level $0.05$, then how many null hypotheses do we reject?
+  
+  (d)
+  If we control the FDR at level $0.05$, then how many null hypotheses do we reject?
+  
+  (e)
+  Nowe suppose we "cherry-pick" the 10 fund managers who perform the best in our data. If we control the FWER for just these 10 fund managers at level $0.05$, then how many null hypotheses do we reject? If we control the FDR for just these 10 fund managers at level $0.05$, then how many null hypotheses do we reject?
+  
+  (f)
+  Explain why the analysis in (e) is misleading. 
+  *Hint: The standard approaches for controlling the FWER and FDR assume that all tested null hypotheses are adjusted for multiplicity, and that no "cherry-picking" of the smallest p-values has occurred. What goes wrong if we cherry-pick?*
